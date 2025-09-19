@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced: Block vs Inline + Table & Form</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Block vs Inline Elements</h1>
+      <p class="subtitle">Understanding HTML Inline and Block element display properties with examples</p>
+    </header>
+
+    <div class="toggle-container">
+      <span style="margin-right: 10px;">Dark Mode</span>
+      <label class="toggle-switch">
+        <input type="checkbox" id="darkModeToggle">
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div class="section">
+      <h2><i class="fas fa-cubes"></i> Examples of Block Elements</h2>
+      <p>Block elements take up the full width available and start on a new line.</p>
+      
+      <h3 class="block-element">Heading Block (h3)</h3>
+      <div class="block-element">This is a div block</div>
+      <p class="block-element">This is a paragraph block</p>
+      
+      <ul class="block-element">
+        <li>Unordered list item 1</li>
+        <li>Unordered list item 2</li>
+      </ul>
+      
+      <ol class="block-element">
+        <li>Ordered list item 1</li>
+        <li>Ordered list item 2</li>
+      </ol>
+      
+      <article class="block-element">
+        This is an article (block element)
+      </article>
+    </div>
+
+    <div class="section delay-1">
+      <h2><i class="fas fa-arrows-alt-h"></i> Convert Block Elements to Inline</h2>
+      <p>Using CSS to change block elements to display inline.</p>
+      
+      <h3 class="block-to-inline">Heading Inline</h3>
+      <div class="block-to-inline">Div Inline</div>
+      <p class="block-to-inline">Paragraph Inline</p>
+      <ul class="block-to-inline"><li>UL Inline</li></ul>
+      <ol class="block-to-inline"><li>OL Inline</li></ol>
+      <article class="block-to-inline">Article Inline</article>
+    </div>
+
+    <div class="section delay-1">
+      <h2><i class="fas fa-i-cursor"></i> Examples of Inline Elements</h2>
+      <p>Inline elements only take up as much width as necessary and do not start on a new line.</p>
+      
+      <p>
+        <b class="inline-element">Bold (inline)</b>
+        <i class="inline-element">Italic (inline)</i>
+        <span class="inline-element">Span (inline)</span>
+        <a href="#" class="inline-element">Link (inline)</a>
+        <strong class="inline-element">Strong (inline)</strong>
+        <em class="inline-element">Emphasis (inline)</em>
+      </p>
+    </div>
+
+    <div class="section delay-2">
+      <h2><i class="fas fa-image"></i> Image Examples (Normally Inline Elements)</h2>
+      <div class="image-container">
+        <img src="img/unnamed.webp" alt="SPI">
+        <img src="img/unnamed (1).webp" alt="SPI MAIN GATE">
+        <img src="img/unnamed (2).webp" alt="CSE DEPARTMENT">
+      </div>
+    </div>
+
+    <div class="section delay-2">
+      <h2><i class="fas fa-arrows-alt-v"></i> Convert Inline Elements to Block</h2>
+      <p>Using CSS to change inline elements to display block.</p>
+      
+      <b class="inline-to-block">Bold (Block)</b>
+      <i class="inline-to-block">Italic (Block)</i>
+      <span class="inline-to-block">Span (Block)</span>
+      <a href="#" class="inline-to-block">Link (Block)</a>
+      <strong class="inline-to-block">Strong (Block)</strong>
+      <em class="inline-to-block">Emphasis (Block)</em>
+    </div>
+
+    <div class="section delay-3">
+      <h2><i class="fas fa-image"></i> Convert Images from Inline to Block</h2>
+      <p>Images are inline elements by default. Here they are converted to block elements:</p>
+      
+      <img class="img-inline-to-block" src="img/unnamed.webp" alt="SPI">
+      <img class="img-inline-to-block" src="img/unnamed (1).webp" alt="SPI MAIN GATE">
+      <img class="img-inline-to-block" src="img/unnamed (2).webp" alt="CSE DEPARTMENT">
+    </div>
+
+    <div class="section delay-3">
+      <h2><i class="fas fa-table"></i> Student Information Table</h2>
+      <div class="table-container">
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Roll</th>
+            <th>CGPA</th>
+          </tr>
+          <tr>
+            <td>Sakib</td>
+            <td>871204</td>
+            <td>3.90</td>
+            
+          </tr>
+          <tr>
+            <td>Bijoy</td>
+            <td>871222</td>
+            <td>3.93</td>
+            
+          </tr>
+          <tr>
+            <td>Wadud</td>
+            <td>871226</td>
+            <td>4.00</td>
+            
+          </tr>
+          <tr>
+            <td>Rafi</td>
+            <td>871206</td>
+            <td>3.89</td>
+           
+          </tr>
+          <tr>
+            <td>Osman</td>
+            <td>871211</td>
+            <td>4.00</td>
+            
+          </tr>
+          <tr>
+            <td>Al Mamun</td>
+            <td>871249</td>
+            <td>4.00</td>
+          
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2><i class="fas fa-edit"></i> Registration Form</h2>
+      <div class="form-container">
+        <form action="/action.php" class="reg-form">
+          <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Enter your name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter password" required>
+          </div>
+
+          <div class="radio-group">
+            <h4>Select your class:</h4>
+            <label><input type="radio" value="1st semester" name="class"> 1st semester</label>
+            <label><input type="radio" value="2nd semester" name="class"> 2nd semester</label>
+            <label><input type="radio" value="3rd semester" name="class"> 3rd semester</label>
+            <label><input type="radio" value="4th semester" name="class"> 4th semester</label>
+            <label><input type="radio" value="5th semester" name="class"> 5th semester</label>
+            <label><input type="radio" value="6th semester" name="class"> 6th semester</label>
+            <label><input type="radio" value="7th semester" name="class"> 7th semester</label>
+            <label><input type="radio" value="8th semester" name="class"> 8th semester</label>
+          </div>
+
+          <div class="checkbox-group">
+            <h4>Select your Department:</h4>
+            <label><input type="checkbox" value="Civil" name="subject"> Civil </label>
+            <label><input type="checkbox" value="Computer" name="subject"> Computer </label>
+            <label><input type="checkbox" value="Power" name="subject"> Power </label>
+            <label><input type="checkbox" value="Electronics" name="subject"> Electronics </label>
+            <label><input type="checkbox" value="Electro Medical" name="subject"> Electro Medical </label>
+            <label><input type="checkbox" value="Electrical" name="subject"> Electrical </label>
+          </div>
+
+          <div class="form-group">
+            <label for="Divition">Select your city:</label>
+            <select id="Divition" name="Divition">
+              <option value="Sylhet">Sylhet</option>
+              <option value="Dhaka">Dhaka</option>
+              <option value="Khulna">Khulna</option>
+              <option value="Barishal">Barishal</option>
+              <option value="Rajshahi">Rajshahi</option>
+              <option value="Chottogram">Chottogram</option>
+              <option value="Rangpur">Rangpur</option>
+              <option value="Mymenshingh">Mymenshingh</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="4" placeholder="Write your feedback here..."></textarea>
+          </div>
+
+          <button type="submit">Submit Registration</button>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <p>Created by YEAMIN AHMED SAKIB | Block vs Inline Elements Demo |</p>
+    </footer>
+  </div>
+
+  <script>
+    // Dark mode toggle functionality
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    
+    darkModeToggle.addEventListener('change', function() {
+      if(this.checked) {
+        document.body.classList.add('dark-mode');
+        // Add dark mode styles
+        document.documentElement.style.setProperty('--light', '#212529');
+        document.documentElement.style.setProperty('--dark', '#f8f9fa');
+        document.body.style.background = 'linear-gradient(135deg, #121212 0%, #2d2d2d 100%)';
+      } else {
+        document.body.classList.remove('dark-mode');
+        // Revert to light mode styles
+        document.documentElement.style.setProperty('--light', '#f8f9fa');
+        document.documentElement.style.setProperty('--dark', '#212529');
+        document.body.style.background = 'linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%)';
+      }
+    });
+  </script>
+</body>
+</html>
